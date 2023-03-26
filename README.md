@@ -1,14 +1,17 @@
+#NAI-Perceptron
+
 Wpliku perceptron.data znajdują się dane treningowe: zbiór Iris ograniczony do Iris-versicolor
 i Iris-virginica. W pliku perceptron.test.data znajduje się zbiór testowy. Zaimplementuj
 perceptron i wytrenuj, aby rozróżniał dwa gatunki. Testuj na zbiorze testowym i
 wypisz dokładność klasyfikacji.
 Program powinien umożliwiać:
- Wczytanie dowolnego zbioru treningowego z pliku w formacie csv, gdzie ostatnia
+- Wczytanie dowolnego zbioru treningowego z pliku w formacie csv, gdzie ostatnia
 kolumna to atrybut decyzyjny. Powinien dostosowywać liczbę wag do wczytanego
 zbioru. (!!)
- Wybór stałej uczenia.
- Prosty interfejs pozwalający na podanie ręczne wektorów do klasyfikacji.
- Wskazówki:
+- Wybór stałej uczenia.
+- Prosty interfejs pozwalający na podanie ręczne wektorów do klasyfikacji.
+
+Wskazówki:
 – Dla najlepszych efektów należy wybrać małą stałą uczenia (np. 0.01) i powtarzać
 przez wiele iteracji (tzw. epok).
 – Wagi początkowe można losować np. z zakresu [0, 1].
