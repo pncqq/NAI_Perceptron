@@ -1,19 +1,48 @@
-# NAI-Perceptron
-Wpliku perceptron.data znajdują się dane treningowe: zbiór Iris ograniczony do Iris-versicolor
-i Iris-virginica. W pliku perceptron.test.data znajduje się zbiór testowy. Zaimplementuj
-perceptron i wytrenuj, aby rozróżniał dwa gatunki. Testuj na zbiorze testowym i
-wypisz dokładność klasyfikacji.
-Program powinien umożliwiać:
-- Wczytanie dowolnego zbioru treningowego z pliku w formacie csv, gdzie ostatnia
-kolumna to atrybut decyzyjny. Powinien dostosowywać liczbę wag do wczytanego
-zbioru. (!!)
-- Wybór stałej uczenia.
-- Prosty interfejs pozwalający na podanie ręczne wektorów do klasyfikacji.
+# 🤖 NAI_Perceptron
 
-Wskazówki:
-– Dla najlepszych efektów należy wybrać małą stałą uczenia (np. 0.01) i powtarzać
-przez wiele iteracji (tzw. epok).
-– Wagi początkowe można losować np. z zakresu [0, 1].
-– Klasy Iris-versicolor i Iris-virginica nie są liniowo separowalne (błąd
-iteracji podczas uczenia będzie większy od 0), ale mimo tego możliwe jest
-uzyskanie wysokiej dokładności na zbiorze testowym.
+Projekt przedstawia implementację klasycznego **algorytmu perceptronu** do klasyfikacji binarnej danych z ograniczonego zbioru **Iris**. Celem jest rozróżnienie gatunków *Iris-versicolor* i *Iris-virginica*.
+
+## 📂 Zawartość repozytorium
+
+- `main.py` – główny plik z implementacją algorytmu perceptronu
+- `functions.py` – funkcje pomocnicze do obsługi danych, klasyfikacji i uczenia
+- `Data/perceptron.data` – zbór treningowy (CSV)
+- `Data/perceptron.test.data` – zbór testowy (CSV)
+
+## 🧠 Funkcjonalności
+
+- Wczytanie danych treningowych i testowych z plików CSV
+- Dynamiczne dostosowanie liczby wag do liczby cech
+- Wybór współczynnika uczenia (learning rate)
+- Trening perceptronu przez zadaną liczbę epok
+- Testowanie dokładności modelu na danych testowych
+- Klasyfikacja ręcznych wektorów wejściowych
+
+## ⚙️ Technologie
+
+- Python 3.x
+- NumPy
+
+## ▶️ Jak uruchomić
+
+1. Sklonuj repozytorium:
+```bash
+git clone https://github.com/pncqq/NAI_Perceptron.git
+cd NAI_Perceptron
+```
+
+2. Uruchom program:
+```bash
+python main.py
+```
+
+> 🔎 W trakcie działania program poprosi o podanie współczynnika uczenia i liczby epok. Dane z plików zostaną automatycznie załadowane.
+
+## 📈 Wskazówki
+
+- Najlepsze rezultaty daje **mały learning rate** (np. `0.01`) i wiele epok treningu
+- Klasy Iris-versicolor i Iris-virginica **nie są idealnie separowalne**, ale mimo to perceptron potrafi osiągnąć wysoką skuteczność
+
+## 👨‍💻 Autor
+**Filip Michalski**  
+Projekt wykonany w ramach kursu NAI (Narzędzia AI) jako praktyczne wprowadzenie do algorytmów uczenia nadzorowanego.
